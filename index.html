@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewpost" width="device-width, initial-scale=1.0">
+    <title>Technical Document</title>
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
+  <body>
+    <!--Start NavBar-->
+    <nav id="navbar">
+      <header>Chess pieces
+      </header>
+      <ul>
+        <li>
+          <a class="nav-link" href="#king">King</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#queen">Queen</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#rook">Rook</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#bishop">Bishop</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#knight">Knight</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#pawn">pawn</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#absolute_values_of_pieces">Absolute values of pieces</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#reference">Reference</a>
+        </li>
+      </ul>
+    </nav>
+    <!--End NavBar-->
+    <!--Start Main-->
+    <main id="main-doc">
+      <!--Start King Section-->
+      <section class="main-section" id="king">
+        <header>King</header>
+        <article>
+          <p>The king may move to any adjoining square. No move may be made such that the king is placed or left in check. The king may participate in castling, which is a move consisting of the king moving two squares toward a same-colored rook on the same rank and the rook moving to the square crossed by the king.</p> 
+          <p>Castling may only be performed if the king and rook involved are unmoved, if the king is not in check, if the king would not travel through or into check, and if there are no pieces between the rook and the king.</p>
+          <p>Check and checkmate note as plus and X. It's in code:</p>
+          <code>
+          if (insert == check) {</br>
+          alert('+');</br>
+          &nbsp else </br>
+          &nbsp if (insert == checkmate) {</br>
+          &nbsp alert('x');
+          </br>&nbsp}
+          </br>}
+          </code>
+        </article>
+      </section>
+      <!--End King Section-->
+      <!--Start Queen Section-->
+      <section class="main-section"id="queen">
+        <header >Queen</header>
+        <article>
+          <p>The queen may move any number of squares vertically, horizontally, or diagonally without jumping.</p>
+          <p>The Queen's shirt version is a letter "Q". For e.g.:</p>
+          <code>
+          if (insert == queen) {</br>
+          alert('Q');</br>
+          }
+          </code>
+        </article>
+      </section>
+      <!--End Queen Section-->
+      <!--Start Rook Section-->
+      <section class="main-section" id="rook">
+        <header>Rook</header>
+        <article>
+          <p>The rook may move any number of squares vertically or horizontally without jumping. It also takes part, along with the king, in castling.</p>
+          <p>The Rook's shirt version is a letter "R". For e.g.:</p>
+          <code>
+          if (insert == rook) {</br>
+          alert('R');</br>
+          }
+          </code>
+        </article>
+      </section>
+      <!--End Rook Section-->
+      <!--Start Bishop Section-->
+      <section class="main-section" id="bishop">
+        <header>Bishop</header>
+        <article>
+          <p>The bishop may move any number of squares diagonally without jumping. Consequently, a bishop stays on squares of the same color throughout the game.</p>
+          <p>The Bishop's shirt version is a letter "B". For e.g.:</p>
+          <code>
+          if (insert == queen) {</br>
+          alert('B');</br>
+          }
+          </code>
+        </article>
+      </section>
+      <!--End Bishop Section-->
+      <!--Start Knight Section-->
+      <section class="main-section" id="knight">
+        <header>Knight</header>
+        <article>
+          <p>The knight moves from one corner of any two-by-three rectangle to the opposite corner. Consequently, the knight alternates its square color each time it moves. It is not obstructed by other pieces.</p>
+          <p>The Knight's shirt version is a letter "N". For e.g.:</p>
+          <code>
+          if (insert == queen) {</br>
+          alert('N');</br>
+          }
+          </code>
+        </article>
+      </section>
+      <!--End Knight Section-->
+      <!--Start Pawn Section-->
+      <section class="main-section" id="pawn">
+        <header>pawn</header>
+        <article>
+          <p>The pawn may move forward one square, and one or two squares when on its starting square, toward the opponent's side of the board. When there is an enemy piece one square diagonally ahead of a pawn, then the pawn may capture that piece. A pawn can perform a special type of capture of an enemy pawn called en passant ("in passing"), wherein it captures a horizontally adjacent enemy pawn that has just advanced two squares as if that pawn had only advanced one square. If the pawn reaches a square on the back rank of the opponent, it promotes to the player's choice of a queen, rook, bishop, or knight of the same color.</p>
+          <p>The pawns not spelled.</p>
+        </article>
+      </section>
+      <!--End Pawn Section-->
+      <!--Start Values Section-->
+       <section class="main-section" id="absolute_values_of_pieces">
+        <header>Absolute values of pieces</header>
+        <article>
+          <ul>
+            <li>King - invaluable</ol>
+            <li>Queen - 9 pawns</ol>
+            <li>Rook - 5 pawns</ol>
+            <li>Bishop - 3 pawns</ol>
+            <li>Knight - 3 pawns</ol>
+          </ul>
+        </article>
+      </section>
+      <!--End Value Section-->
+      <!--Start Reference Section-->
+       <section class="main-section" id="reference">
+        <header>Reference</header>
+        <article>
+          <p>The documentation in this page is taken from <a target="_blank" href="https://en.wikipedia.org/wiki/Chess_piece">Wiki</a>.</p>
+        </article>
+      </section>
+      <!--End Reference Section-->
+    </main>
+    <!--End Main-->
+  </body>
+</html>
